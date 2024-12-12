@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Event Ticket Booking System</h1>
+    </header>
+
+    <main>
+        <section class="section available-tickets">
+            <h2>Available Tickets</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticket ID</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="available">Available</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="available">Available</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="booked">Booked</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="available">Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section booking-form">
+            <h2>Book a Ticket</h2>
+            <form id="bookingForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="ticketId">Choose a Ticket ID:</label>
+                <select id="ticketId" name="ticketId" required>
+                    <option value="1">Ticket ID 1</option>
+                    <option value="2">Ticket ID 2</option>
+                    <option value="3">Ticket ID 3</option>
+                    <option value="4">Ticket ID 4</option>
+                </select>
+
+                <button type="submit" class="btn">Book Ticket</button>
+            </form>
+        </section>
+
+        <section class="section bookings">
+            <h2>Bookings</h2>
+            <ul id="bookingList">
+                <!-- Booked tickets will appear here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Ticket Booking System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
